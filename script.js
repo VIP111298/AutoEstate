@@ -172,7 +172,7 @@ function createCarCard(car) {
                 </div>
 
                 <div class="car-actions">
-                    <a href="./car-details.html?id=${car.id}" class="btn btn-secondary">
+                    <a href="./cars-details.html?id=${car.id}" class="btn btn-secondary">
                         View Details
                     </a>
 
@@ -510,7 +510,7 @@ function setupMobileMenu() {
     });
 }
 
-const GNEWS_API_KEY = "YOUR_GNEWS_API_KEY";
+const GNEWS_API_KEY = "YOUR_GNEWS_API_KEY"; // Replace with your GNews API key
 
 async function loadNews() {
     const newsGrid = document.getElementById("newsGrid");
