@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Cars | AutoEstate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">A</span>
+            <span>AutoEstate</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="cars.html" class="active">Browse Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">Book Test Drive</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">OUR INVENTORY</span>
+        <h1>Browse Pre-Owned Cars</h1>
+        <p>
+            Explore our demo collection of quality pre-owned cars.
+        </p>
+    </div>
+</section>
+
+<section class="inventory-section">
+    <div class="container">
+
+        <div class="filters">
+
+            <div class="filter-group">
+                <label for="inventorySearch">Search</label>
+                <input
+                    type="text"
+                    id="inventorySearch"
+                    placeholder="Search BMW, Honda, Toyota..."
+                >
+            </div>
+
+            <div class="filter-group">
+                <label for="inventoryType">Body Type</label>
+
+                <select id="inventoryType">
+                    <option value="">All Types</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="inventoryFuel">Fuel</label>
+
+                <select id="inventoryFuel">
+                    <option value="">All Fuel Types</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="inventoryBudget">Maximum Budget</label>
+
+                <select id="inventoryBudget">
+                    <option value="">Any Budget</option>
+                    <option value="15">Under ₹15 Lakh</option>
+                    <option value="20">Under ₹20 Lakh</option>
+                    <option value="40">Under ₹40 Lakh</option>
+                    <option value="50">Under ₹50 Lakh</option>
+                    <option value="75">Under ₹75 Lakh</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="inventorySort">Sort By</label>
+
+                <select id="inventorySort">
+                    <option value="default">Recommended</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="year-new">Newest First</option>
+                    <option value="km-low">Lowest KM</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="inventory-top">
+            <p id="resultCount">Showing 10 of 10 cars</p>
+
+            <button
+                type="button"
+                id="clearFilters"
+                class="clear-btn"
+            >
+                Clear Filters
+            </button>
+        </div>
+
+        <div
+            id="inventoryGrid"
+            class="cars-grid"
+        ></div>
+
+        <div
+            id="emptyState"
+            class="empty-state"
+            style="display: none;"
+        >
+            <h3>No cars found</h3>
+
+            <p>
+                Try changing your search or filters.
+            </p>
+
+            <button
+                type="button"
+                id="clearFiltersEmpty"
+                class="btn btn-primary"
+            >
+                Clear Filters
+            </button>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">A</span>
+                <span>AutoEstate</span>
+            </a>
+
+            <p>
+                A simple platform for discovering quality pre-owned cars.
+            </p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <a href="cars.html">Browse Cars</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <a href="contact.html">Test Drive</a>
+            <a href="cars.html">Car Inventory</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Delhi NCR, India</p>
+            <p>+91 98765 43210</p>
+            <p>hello@autoestate.demo</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>
+            © 2026 AutoEstate.
+        </span>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

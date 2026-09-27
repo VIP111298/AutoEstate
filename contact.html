@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Test Drive | AutoEstate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">A</span>
+            <span>AutoEstate</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="cars.html">Browse Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html" class="nav-cta">Book Test Drive</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label light-label">CONTACT US</span>
+            <h1>Let's get you behind the wheel.</h1>
+            <p>
+                Send us your details and request a test drive for any car
+                in our demo inventory.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section contact-section">
+
+        <div class="container contact-grid">
+
+            <div class="contact-info">
+
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h2>Have a question?</h2>
+
+                <p>
+                    Use the form to send a test-drive request or contact
+                    our showroom directly.
+                </p>
+
+                <div class="contact-item">
+                    <strong>Showroom</strong>
+                    <span>Delhi NCR, India</span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <span>+91 98765 43210</span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span>hello@autoestate.demo</span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Opening Hours</strong>
+                    <span>Mon - Sat: 10:00 AM - 7:00 PM</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-form-wrapper">
+
+                <form id="testDriveForm" class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Your name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                placeholder="+91..."
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="you@example.com"
+                        >
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="carSelect">Select Car *</label>
+
+                            <select id="carSelect" name="car" required>
+                                <option value="">
+                                    Choose a car
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="testDriveDate">Preferred Date</label>
+
+                            <input
+                                type="date"
+                                id="testDriveDate"
+                                name="date"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Anything you'd like us to know?"
+                        ></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Request Test Drive
+                    </button>
+
+                    <div id="formMessage" class="form-message"></div>
+
+                    <small class="form-note">
+                        Demo form: no information is actually sent to a
+                        dealership backend.
+                    </small>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">A</span>
+                <span>AutoEstate</span>
+            </a>
+
+            <p>
+                A simple platform for discovering quality pre-owned cars.
+            </p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <a href="cars.html">Browse Cars</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <a href="contact.html">Test Drive</a>
+            <a href="cars.html">Car Inventory</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Delhi NCR, India</p>
+            <p>+91 98765 43210</p>
+            <p>hello@autoestate.demo</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 AutoEstate.</span>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

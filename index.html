@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoEstate | Quality Pre-Owned Cars</title>
+    <meta name="description" content="AutoEstate - Browse quality pre-owned cars with transparent pricing, inspection and test drive options.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">A</span>
+            <span>AutoEstate</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="cars.html">Browse Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta">Book Test Drive</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="eyebrow">QUALITY PRE-OWNED CARS</span>
+
+            <h1>
+                Find Your Next
+                <span>Perfect Car.</span>
+            </h1>
+
+            <p>
+                Explore carefully selected pre-owned cars with transparent
+                pricing, detailed information and easy test-drive booking.
+            </p>
+
+            <div class="hero-actions">
+                <a href="cars.html" class="btn btn-primary">
+                    Browse Cars
+                </a>
+
+                <a href="about.html" class="btn btn-outline-light">
+                    Why AutoEstate?
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- QUICK SEARCH -->
+    <section class="quick-search-section">
+        <div class="container">
+
+            <form class="quick-search" id="homeSearchForm">
+
+                <div class="search-heading">
+                    <span>Find a car</span>
+                    <small>Search our pre-owned inventory</small>
+                </div>
+
+                <div class="search-field">
+                    <label for="homeKeyword">Brand / Model</label>
+                    <input
+                        type="text"
+                        id="homeKeyword"
+                        placeholder="BMW, Fortuner, Creta..."
+                    >
+                </div>
+
+                <div class="search-field">
+                    <label for="homeType">Type</label>
+                    <select id="homeType">
+                        <option value="">All Types</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="homeFuel">Fuel</label>
+                    <select id="homeFuel">
+                        <option value="">All Fuel Types</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-dark">
+                    Search Cars
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- FEATURED CARS -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">OUR INVENTORY</span>
+                    <h2>Featured Cars</h2>
+                </div>
+
+                <a href="cars.html" class="text-link">
+                    View all cars →
+                </a>
+            </div>
+
+            <div class="car-grid" id="featuredCars"></div>
+
+        </div>
+    </section>
+
+
+
+    <!-- DIFFERENCE -->
+    <section class="section section-light">
+        <div class="container">
+
+            <div class="center-heading">
+                <span class="section-label">THE AUTOESTATE DIFFERENCE</span>
+                <h2>A simpler way to buy a used car.</h2>
+                <p>
+                    We focus on making the pre-owned car buying experience
+                    straightforward and transparent.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-box">
+                    <div class="feature-icon">✓</div>
+                    <h3>Inspected Cars</h3>
+                    <p>
+                        Every listed vehicle is presented with inspection
+                        information so you can make an informed decision.
+                    </p>
+                </article>
+
+                <article class="feature-box">
+                    <div class="feature-icon">₹</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>
+                        Clear listed prices help you understand the vehicle
+                        before starting a conversation.
+                    </p>
+                </article>
+
+                <article class="feature-box">
+                    <div class="feature-icon">↗</div>
+                    <h3>Easy Test Drives</h3>
+                    <p>
+                        Choose your car and send a test-drive request in a
+                        few simple steps.
+                    </p>
+                </article>
+
+                <article class="feature-box">
+                    <div class="feature-icon">▣</div>
+                    <h3>Document Focus</h3>
+                    <p>
+                        Vehicle documentation can be discussed before
+                        completing a purchase.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- NEWS -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">AUTOMOTIVE NEWS</span>
+                    <h2>News & Auto Updates</h2>
+                </div>
+            </div>
+
+            <div id="newsStatus" class="news-status">
+                Loading latest automotive news...
+            </div>
+
+            <div class="news-grid" id="newsGrid"></div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container cta-content">
+
+            <div>
+                <span class="section-label light-label">READY TO DRIVE?</span>
+
+                <h2>Found something you like?</h2>
+
+                <p>
+                    Book a test drive and experience the car yourself.
+                </p>
+            </div>
+
+            <a href="contact.html" class="btn btn-white">
+                Book a Test Drive
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">A</span>
+                <span>AutoEstate</span>
+            </a>
+
+            <p>
+                A simple platform for discovering quality pre-owned cars.
+            </p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="cars.html">Browse Cars</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <ul>
+                <li><a href="contact.html">Test Drive</a></li>
+                <li><a href="cars.html">Car Inventory</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Delhi NCR, India</p>
+            <p>+91 98765 43210</p>
+            <p>hello@autoestate.demo</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 AutoEstate.</span>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
